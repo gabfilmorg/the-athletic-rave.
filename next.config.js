@@ -1,2 +1,8 @@
-/** @type {import('next').NextConfig} */ const nextConfig = { output: 'standalone' }; module.exports = nextConfig 
-/** @type {import('next').NextConfig} */  const nextConfig = {    output: 'standalone'  };  module.exports = nextConfig; 
+    (
+    echo /** @type {import('next').NextConfig} */
+    echo const nextConfig = {
+    echo   output: 'standalone'
+    echo };
+    echo.
+    echo module.exports = nextConfig;
+    ) > next.config.js
