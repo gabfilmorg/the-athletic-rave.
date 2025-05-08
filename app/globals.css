@@ -1,3 +1,7 @@
+/* Este arquivo existe apenas para que o Vercel detecte a pasta app */
+/* O conteúdo real está em src/app/globals.css */
+@import '../src/app/globals.css'; 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +13,7 @@ html, body {
 body {
   background: #000000;
   color: #FFFFFF;
-  font-family: var(--font-geist-sans, Inter, Arial, Helvetica, sans-serif);
+  font-family: var(--font-inter, Arial, Helvetica, sans-serif);
   min-height: 100vh;
 }
 
@@ -18,16 +22,9 @@ body {
   --foreground: #FFFFFF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} 

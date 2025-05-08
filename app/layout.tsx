@@ -1,3 +1,5 @@
+// Este arquivo existe apenas para que o Vercel detecte a pasta app
+// O conteúdo real está em src/app
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -31,4 +33,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+} 
